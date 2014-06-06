@@ -7,5 +7,20 @@ unless selectr.between?(1,6)
 	end
 end
 
-
+def call_option(selectr)
+	case selectr
+	when 1
+		addNewContact
+	when 2
+		modifyContact
+	when 3
+		deleteContact
+	when 4
+		displayContact
+	when 5
+		displayAttribute
+	when 6
+		return
+	end
+end
 
